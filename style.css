@@ -1,0 +1,43 @@
+body {
+    background: #FDEACA;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+a {
+    color: #FDEACA;
+    text-decoration: none;
+}
+
+.header {
+    height: 212px;
+    width: auto;
+    background: #3A4E54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.buttons {
+    color: #FDEACA;
+    font-family: Segoe UI;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.8px;
+    display: flex;
+    width: 684px;
+    justify-content: center;
+    gap: 48px;
+}
+
+.logo {
+    position: absolute;
+    left: 24px;
+}
+
