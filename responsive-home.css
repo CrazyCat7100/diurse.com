@@ -1,0 +1,38 @@
+
+@media screen and (max-width: 1200px) {
+  
+}
+
+@media screen and (max-width: 992px) {
+    .buttons {
+        margin-left: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .buttons {
+        margin-left: 150px; 
+    }
+
+}
+
+
+@media screen and (max-width: 564px) {
+    .header {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        position: absolute;
+        left: 150px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    
+}
+
+@media screen and (max-width: 370px) {
+
+}
