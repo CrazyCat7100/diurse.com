@@ -5,13 +5,26 @@
 
 @media screen and (max-width: 992px) {
     .buttons {
+<<<<<<< HEAD
         margin-left: 100px;
+=======
+        position: static; 
+        width: 100%; 
+        max-width: none; 
+        text-align: center; 
+    }
+>>>>>>> de13da248216912353d6624aeb24abcf3441ea43
 }
 
 @media screen and (max-width: 768px) {
     
     .buttons {
+<<<<<<< HEAD
         margin-left: 150px; 
+=======
+        position: absolute;
+        left: 100px; 
+>>>>>>> de13da248216912353d6624aeb24abcf3441ea43
     }
 
 }
@@ -24,8 +37,11 @@
 
     .buttons {
         flex-direction: column;
+<<<<<<< HEAD
         position: absolute;
         left: 150px;
+=======
+>>>>>>> de13da248216912353d6624aeb24abcf3441ea43
     }
 }
 
@@ -36,3 +52,7 @@
 @media screen and (max-width: 370px) {
 
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> de13da248216912353d6624aeb24abcf3441ea43
