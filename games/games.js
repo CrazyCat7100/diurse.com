@@ -11,5 +11,5 @@ colourMatcher.addEventListener('click', function () {
 });
 
 alexMessanger.addEventListener('click', function () {
-    window.open('https://alex-messanger.onrender.com/', '_blank');
+    window.location.href = ('https://alex-and-dad.onrender.com/');
 });

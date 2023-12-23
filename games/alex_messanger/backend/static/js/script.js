@@ -132,6 +132,6 @@ chooseFile.addEventListener('change', function () {
 let back = document.getElementsByClassName('back')[0]
 
 back.addEventListener('click', function () {
-    window.location.href = 'diurse.com/games/games.html'
+    window.location.href = 'https://diurse.com/games/games.html'
 })
 
