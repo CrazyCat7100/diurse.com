@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Messanger</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="shortcut icon" href="/img/question_mark.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="chat">
+            <div class="messages2">
+                <%  for (let i = 0; i < data.length; i++) {  %>
+                    <div class="message" data-id="<%= data[i]._id  %> ">
+                        <img src="/img/avatars/<%= data[i].icon  %>" alt="" class="icon">
+                        <% if (data[i].message.startsWith('*')) {%>
+                            <div class="message_text"><b><%= data[i].message.slice(1)  %></b> </div>
+                            <% }  else {%>
+                                <div class="message_text"> <%= data[i].message  %></div>
+                                <% }  %>
+                    </div>
+                <% }  %>
+            </div>
+
+
+         
+        </div>
+    </div>
+
+    <div class="send">
+        <div class="select-icon">
+            <div class="catalog-icons">
+                <img src="/img/avatars/avatar_1.jpg" alt="" class="avatar avatar1">
+                <img src="/img/avatars/avatar_2.jpg" alt="" class="avatar avatar2">
+                <img src="/img/avatars/avatar_3.jpg" alt="" class="avatar avatar3">
+                <img src="/img/avatars/avatar_4.jpg" alt="" class="avatar avatar4">
+                <img src="/img/avatars/avatar_5.jpg" alt="" class="avatar avatar5">
+                <form method="post" action="/img/avatars" enctype="multipart/form-data">
+  <!-- small code -> 10 * 5 = 50 // 200 * 20 // 4000 -->
+
+                    <div class="pretty-input">
+                       <input name="myfile" type="file" class="choose-file" accept="image/*">
+                       <div class="fake-input"></div>
+                    </div>
+                  </form>
+            </div>
+            <img src="/img/avatars/question_mark.png" alt="" class="icon-img">
+        </div>
+            <input type="text" class="input">
+        <div class="send_btn"><img src="/img/send_btn.png" alt=""></div>
+    </div>
+
+   
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

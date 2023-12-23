@@ -1,0 +1,101 @@
+body {
+    background-image: url(/img/background.jpg);
+    overflow: hidden;
+}
+
+.catcher {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.red, .blue, .yellow, .green {
+    width: 25%;
+    height: 100px;
+    float: left;
+    box-sizing: border-box; 
+  }
+  
+  .red {
+    background: red;
+    border: 5px solid black;
+  }
+  
+  .blue {
+    background: blue;
+    border: 5px solid black;
+  }
+  
+  .yellow {
+    background: yellow;
+    border: 5px solid black;
+  }
+  
+  .green {
+    background: green;
+    border: 5px solid black;
+  }
+
+  .block {
+    height: 100px;
+    width: 100px;
+    background: grey;
+    border: 5px solid black;
+    display: none;
+    position: absolute;
+    /* left: calc(50.01% + 50px); */
+    top: 5px;
+    transition: 1s;
+  }
+  
+  .counter {
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    border: 5px solid black;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .start {
+    width: 500px;
+    height: 200px;
+    background-color: limegreen;
+    font-size: 100px;
+    border: 5px solid black;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+  .back {
+    width: 300px;
+    height: 100px;
+    border: 5px solid black;
+    border-radius: 30px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    user-select: none;
+    cursor: pointer;
+}

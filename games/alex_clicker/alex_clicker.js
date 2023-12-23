@@ -17,6 +17,7 @@ let upgradeMoney = parseInt(localStorage.getItem('upgradeMoney')) || initialUpgr
 let autoClickerTime = parseInt(localStorage.getItem('autoClickerTime')) || initialAutoClickerTime;
 let autoClickerCost = parseInt(localStorage.getItem('autoClickerCost')) || initialAutoClickerCost;
 let autoClickInterval;
+let back = document.getElementsByClassName('back')[0]
 
 function updateLocalStorage() {
     localStorage.setItem('clicks', clicks);
@@ -167,3 +168,10 @@ clearData.addEventListener('click', () => {
 
 confirm.addEventListener('click', handleConfirmClick);
 cancel.addEventListener('click', handleCancelClick);
+
+
+
+
+back.addEventListener('click', function () {
+    window.location.href = '/games/games.html'
+})
